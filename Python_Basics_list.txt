@@ -1,0 +1,598 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Aanchal0102/Capstone-Projects/blob/main/Python_Basics_list\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "# List and it's Methods\n",
+        "\n",
+        "Lists are used to store multiple items in a single variable.\n",
+        "\n",
+        "*   Lists are used to store multiple items in a single variable.\n",
+        "*   It is a collection which is ordered, changeable and allows duplicate members.\n",
+        "\n",
+        "**List Methods**\n",
+        "\n",
+        "\n",
+        "append(), sort(), reverse(), remove(), pop(), insert(), index(), extend(), count(), copy(), clear()\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "1P1jdwht7AjD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = ['apple', 'cherry', 'banana']\n",
+        "\n",
+        "fruits.append(\"orange\")\n",
+        "# fruits.sort()\n",
+        "# fruits.reverse()\n",
+        "# fruits.remove(\"banana\")\n",
+        "# fruits.pop(1)\n",
+        "# fruits.insert(1, \"watermelon\")\n",
+        "# fruits.index(\"orange\")\n",
+        "\n",
+        "# others = ['pineapple', 'strawaberry', 'guava','cherry','pineapple']\n",
+        "\n",
+        "# fruits.extend(others)\n",
+        "# fruits.count(\"cherry\")\n",
+        "# fruits.copy()\n",
+        "# fruits.clear()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "9ks2pSF96rTZ"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = ['apple', 'cherry', 'banana']\n",
+        "\n",
+        "# Adding an element to the end of the list\n",
+        "fruits.append(\"orange\")\n",
+        "print(f\"After append('orange'): {fruits}\")\n",
+        "\n",
+        "\n",
+        "# Sorting the list alphabetically\n",
+        "fruits.sort()\n",
+        "print(f\"After sort(): {fruits}\")\n",
+        "\n",
+        "# Reversing the order of elements\n",
+        "fruits.reverse()\n",
+        "print(f\"After reverse(): {fruits}\")\n",
+        "\n",
+        "# Removing the first occurrence of \"banana\"\n",
+        "if \"banana\" in fruits:\n",
+        "    fruits.remove(\"banana\")\n",
+        "    print(f\"After remove('banana'): {fruits}\")\n",
+        "else:\n",
+        "    print(\"'banana' not found in the list for remove operation.\")\n",
+        "\n",
+        "\n",
+        "# Removing the element at index 1 (second element)\n",
+        "if len(fruits) > 1:\n",
+        "    popped_item = fruits.pop(1)\n",
+        "    print(f\"After pop(1): {fruits}, popped item: {popped_item}\")\n",
+        "else:\n",
+        "    print(\"List has fewer than 2 elements for pop(1) operation.\")\n",
+        "\n",
+        "\n",
+        "# Inserting \"watermelon\" at index 1\n",
+        "fruits.insert(1, \"watermelon\")\n",
+        "print(f\"After insert(1, 'watermelon'): {fruits}\")\n",
+        "\n",
+        "\n",
+        "# Finding the index of \"orange\"\n",
+        "if \"orange\" in fruits:\n",
+        "    orange_index = fruits.index(\"orange\")\n",
+        "    print(f\"Index of 'orange': {orange_index}\")\n",
+        "else:\n",
+        "    print(\"'orange' not found in the list for index operation.\")\n",
+        "\n",
+        "others = ['pineapple', 'strawberry', 'guava', 'cherry', 'pineapple']\n",
+        "\n",
+        "# Adding all elements from 'others' to 'fruits'\n",
+        "fruits.extend(others)\n",
+        "print(f\"After extend(others): {fruits}\")\n",
+        "\n",
+        "# Counting the occurrences of \"cherry\"\n",
+        "cherry_count = fruits.count(\"cherry\")\n",
+        "print(f\"Count of 'cherry': {cherry_count}\")\n",
+        "\n",
+        "\n",
+        "# Creating a copy of the 'fruits' list\n",
+        "fruits_copy = fruits.copy()\n",
+        "print(f\"Copied list (fruits_copy): {fruits_copy}\")\n",
+        "\n",
+        "\n",
+        "# Clearing all elements from the 'fruits' list\n",
+        "# fruits.clear()\n",
+        "# print(f\"After clear(): {fruits}\")"
+      ],
+      "metadata": {
+        "id": "jFZy3WYlVnHS",
+        "outputId": "55ea5a88-2a9d-4b86-c0be-b4ea2a30fe6b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After append('orange'): ['apple', 'cherry', 'banana', 'orange']\n",
+            "After sort(): ['apple', 'banana', 'cherry', 'orange']\n",
+            "After reverse(): ['orange', 'cherry', 'banana', 'apple']\n",
+            "After remove('banana'): ['orange', 'cherry', 'apple']\n",
+            "After pop(1): ['orange', 'apple'], popped item: cherry\n",
+            "After insert(1, 'watermelon'): ['orange', 'watermelon', 'apple']\n",
+            "Index of 'orange': 0\n",
+            "After extend(others): ['orange', 'watermelon', 'apple', 'pineapple', 'strawberry', 'guava', 'cherry', 'pineapple']\n",
+            "Count of 'cherry': 1\n",
+            "Copied list (fruits_copy): ['orange', 'watermelon', 'apple', 'pineapple', 'strawberry', 'guava', 'cherry', 'pineapple']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.pop(1)\n",
+        "fruits.pop(0)"
+      ],
+      "metadata": {
+        "id": "HXZXeG5vgEoR",
+        "outputId": "0a2a356a-e189-4cec-d6fe-93a9dc40f864",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'watermelon'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#fruits_2\n",
+        "\n",
+        "fruits_2 = ['mango', 'grape', 'kiwi']\n",
+        "print(f\"fruits_2: {fruits_2}\")"
+      ],
+      "metadata": {
+        "id": "JquTuL9vd1xy",
+        "outputId": "190191c4-7dca-42f3-c557-029d073b831a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "fruits_2: ['mango', 'grape', 'kiwi']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# String and it's Methods\n",
+        "\n",
+        "*   All string methods returns new values. They do not change the original string.\n",
+        "\n",
+        "**String Methods**\n",
+        "\n",
+        "\n",
+        "*   isalpha(), isalnum(), index(), find(), count(), capitalize(), isdigit(), islower(), isnumeric()\n",
+        "*   endswith(), upper(), title(), swapcase(), strip(), startswith(), split(), join(), lower(), replace()"
+      ],
+      "metadata": {
+        "id": "1CeUtg8TA_jj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"hello, and welcome to our course.\"\n",
+        "a = txt.capitalize()\n",
+        "# print(a)\n",
+        "\n",
+        "txt = \"I am from India and born in Maharashtra, India\"\n",
+        "b = txt.count(\"India\")\n",
+        "# print(b)\n",
+        "\n",
+        "txt = \"I love apples, apple are my favorite fruit\"\n",
+        "c = txt.find(\"banana\")\n",
+        "# print(c)\n",
+        "\n",
+        "# d = txt.index(\"banana\")\n",
+        "# print(d)\n",
+        "\n",
+        "txt = \"hello, my name is Peter, I am 26 years old\"\n",
+        "e = txt.split(',')\n",
+        "print(e)"
+      ],
+      "metadata": {
+        "id": "cgSVsDxU6rc8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1465cfd1-0130-4675-9a9b-6a748e2774c1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['hello', ' my name is Peter', ' I am 26 years old']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"hello, and welcome to our course.\"\n",
+        "a = txt.capitalize()\n",
+        "print(f\"After capitalize(): {a}\")\n",
+        "\n",
+        "txt = \"I am from India and born in Maharashtra, India\"\n",
+        "b = txt.count(\"India\")\n",
+        "print(f\"Count of 'India': {b}\")\n",
+        "\n",
+        "txt = \"I love apples, apple are my favorite fruit\"\n",
+        "c = txt.find(\"banana\")\n",
+        "print(f\"Find 'banana': {c}\")\n",
+        "\n",
+        "try:\n",
+        "    d = txt.index(\"banana\")\n",
+        "    print(f\"Index of 'banana': {d}\")\n",
+        "except ValueError as e:\n",
+        "    print(f\"Error finding 'banana' with index(): {e}\")\n",
+        "\n",
+        "txt = \"hello, my name is Peter, I am 26 years old\"\n",
+        "e = txt.split(',')\n",
+        "print(f\"After split(','): {e}\")"
+      ],
+      "metadata": {
+        "id": "LxsAlmWxrquh",
+        "outputId": "333ed311-75ee-4f9c-e6b0-ce3a6b8cfbd9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After capitalize(): Hello, and welcome to our course.\n",
+            "Count of 'India': 2\n",
+            "Find 'banana': -1\n",
+            "Error finding 'banana' with index(): substring not found\n",
+            "After split(','): ['hello', ' my name is Peter', ' I am 26 years old']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"I love apples, apple is my favorite fruit\""
+      ],
+      "metadata": {
+        "id": "tkFZpxvArlgJ"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt.find('banana')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "snLltyXmrr3R",
+        "outputId": "3614867d-4245-4f6c-e021-b4e0664a60c1"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "-1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"Company12\"\n",
+        "name = txt.isalnum()\n",
+        "# print(name)\n",
+        "\n",
+        "txt = \"Company\"\n",
+        "alpha = txt.isalpha()\n",
+        "# print(alpha)\n",
+        "\n",
+        "txt = '50800'\n",
+        "num = txt.isdigit()\n",
+        "# print(num)\n",
+        "\n",
+        "names = [\"John\", \"Peter\", \"Vicky\"]\n",
+        "joined = \"_\".join(names)\n",
+        "# print(joined)\n",
+        "\n",
+        "txt = \"I love sports\"\n",
+        "result = txt.replace(\"sports\", \"cricket\")\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "id": "4wPE9X9y6rte",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cb7b8e3d-70c7-4c01-c13f-2470658229fb"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I love cricket\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"Hello, welcome to my world.\"\n",
+        "start = txt.startswith(\"Hello\")\n",
+        "end = txt.endswith(\".\")"
+      ],
+      "metadata": {
+        "id": "y6bq81tA6rxJ"
+      },
+      "execution_count": 39,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "start, end"
+      ],
+      "metadata": {
+        "id": "GyjuncKD6r5u",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "aea94606-39d8-409e-cc40-6daa42d6d24e"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(True, True)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 40
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "0_luCZIk6r9W"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Python Conditional Statements\n",
+        "\n",
+        "\n",
+        "*   If , elif, else statements"
+      ],
+      "metadata": {
+        "id": "wjgI26BME9Qc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b , a = 33 , 200\n",
+        "\n",
+        "# print(b>a)\n",
+        "\n",
+        "if b > a:\n",
+        "  print(\"Entered\")\n",
+        "else:\n",
+        "  print('Did not entered')"
+      ],
+      "metadata": {
+        "id": "qwjEKo2TE7sj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "938fab42-69dc-4e82-ab28-26c9ba592c9e"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Did not entered\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aman , vinod = 90 , 80\n",
+        "\n",
+        "if vinod > aman:\n",
+        "  print(\"vinod scores greater than aman\")\n",
+        "elif aman == vinod:\n",
+        "  print(\"Both scores equally\")"
+      ],
+      "metadata": {
+        "id": "p1umnfvmE7uk"
+      },
+      "execution_count": 43,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if vinod > aman:\n",
+        "  print(\"vinod scores greater than aman\")\n",
+        "elif aman == vinod:\n",
+        "  print(\"Both scores equally\")\n",
+        "else:\n",
+        "  print('aman scores greater than vinod')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bzcR9vgGE7wq",
+        "outputId": "454fb97e-6fa3-4fb4-d21b-14290ab3e579"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "aman scores greater than vinod\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks = 72\n",
+        "\n",
+        "if marks > 35:\n",
+        "  print(\"He is Pass\")\n",
+        "  if marks > 60:\n",
+        "    print(\"He is in Distinction\")\n",
+        "  else:\n",
+        "    print(\"He is in Mid Range\")\n",
+        "else:\n",
+        "  print('Sadly, He is Fail')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Wqb480gBE7yq",
+        "outputId": "681d1ab8-3d20-43fd-9348-77348241d973"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "He is Pass\n",
+            "He is in Distinction\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6uCvQvgBE8ES"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Q9EVE0q2E8GE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Aanchal0102/Capstone-Projects/blob/main/Python_projects\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Python Basic Terms**\n",
+        "\n",
+        "\n",
+        "*   Syntax (Valid & Invalid)\n",
+        "*   Comments\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "vTsmuXI7j0NM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print ('name')                  # This is the print statement"
+      ],
+      "metadata": {
+        "id": "gV8N7PgBhy5e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f6346075-6746-4e09-e927-be6de52df403"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prahil = 'prahil'\n",
+        "print(name)"
+      ],
+      "metadata": {
+        "id": "R6sejPXzhzFx",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b951613f-390e-4bc0-d2b9-d915727a08b3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "prahil\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Python Data Types, Type Casting & Variables**\n",
+        "\n",
+        "\n",
+        "*   **Text Type:**\tstr\n",
+        "*   **Numeric Types:**\tint, float\n",
+        "*   **Sequence Types:**\tlist, tuple, range\n",
+        "*   **Mapping Type:**\tdict\n",
+        "*   **Set Types:**\tset\n",
+        "*   **Boolean Type:**\tbool\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "W_B3PupFt5B6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Python Operators**\n",
+        "\n",
+        "*   Arithmetic operators\n",
+        "*   Assignment operators\n",
+        "*   Comparison operators\n",
+        "*   Logical operators\n",
+        "*   Membership operators"
+      ],
+      "metadata": {
+        "id": "CUMJaslIw7qD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Arithmetic Operators (+,-,*,/,%,**)                        # Used with numeric values to perform common mathematical operations\n",
+        "\n",
+        "x = 5\n",
+        "y = 8\n",
+        "\n",
+        "# print(x+y, x-y, x*y, x/y, x%y, x**y)\n",
+        "\n",
+        "print(x+y, x-y, x*y, x/y, x%y, x**y)\n"
+      ],
+      "metadata": {
+        "id": "ZBFXMVCw6if9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3c65fdab-e6f1-4ee1-d72d-9386031b17a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13 -3 40 0.625 5 390625\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Assignment Operators (=,+=,-=,*=,/=,%=,**=)         # Used to assign values to variables\n",
+        "\n",
+        "x, y = 5, 8\n",
+        "# print (x=y, x+=y, x-=y, x*=y)\n",
+        "\n",
+        "x += y\n",
+        "del print  # Try to delete any existing 'print' variable\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "id": "cGsk9NzdMm8v",
+        "outputId": "dacf135a-5aed-48cb-a740-3f7fe3a652ea",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "# Comparison Operators (==,!=,<,>,<=,>=)                     # Used to compare two values\n",
+        "\n",
+        "# print(x == y, x != y, x < y, x > y, x <= y, x >= y)\n",
+        "x, y = 5, 8\n",
+        "\n",
+        "x >= y\n",
+        "\n",
+        "result = x >= y\n",
+        "print(result)\n",
+        "\n",
+        "result = x <= y\n",
+        "print(result)\n",
+        "\n",
+        "result = x == y\n",
+        "print(result)\n",
+        "\n",
+        "result = x != y\n",
+        "print(result)\n"
+      ],
+      "metadata": {
+        "id": "mO9KdpFt6ikP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9655e44c-6231-4978-8900-6232a627628a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Logical Operators (and, or, not)                                        # Used to combine conditional statements\n",
+        "\n",
+        "x, y = 5, 8\n",
+        "\n",
+        "print(f\"The current value of x is: {x}, and its type is: {type(x)}\")\n",
+        "print(f\"The current value of y is: {y}, and its type is: {type(y)}\")\n",
+        "\n",
+        "# print(x and y)\n",
+        "\n",
+        "case1 = (x < y) or (x == y)\n",
+        "\n",
+        "print(case1, not(case1))\n"
+      ],
+      "metadata": {
+        "id": "ARZIC6W46iml",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ab7bc22d-e4d7-40b4-ee20-50ec8e5d3a1c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The current value of x is: 5, and its type is: <class 'int'>\n",
+            "The current value of y is: 8, and its type is: <class 'int'>\n",
+            "True False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membership Operators (==,!=,<,>,<=,>=)                     # Used to test if a sequence is presented in an object\n",
+        "\n",
+        "# print(x in y, x not in y)\n",
+        "\n",
+        "x = [1,2,3,4,5]\n",
+        "y = 6\n",
+        "\n",
+        "y not in x"
+      ],
+      "metadata": {
+        "id": "0ZpytLZ06iq8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "63f0ba04-d07f-4f47-c728-28711df4560f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 78
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "8o6nVYUc6is-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "1B_tJlgG6iu4"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
